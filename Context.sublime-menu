@@ -1,0 +1,33 @@
+[
+{
+    "id" : "secutils",
+    "caption" : "Sec Utils",
+    "children":
+	[
+	{
+		"caption" : "B64 Decode",
+		"command" : "base64decode"
+	},
+	{
+		"caption" : "B64 Encode",
+		"command" : "base64encode"
+	},
+	{
+		"caption" : "Hex Decode",
+		"command" : "hexdecode"
+	},
+	{
+		"caption" : "Hex Encode",
+		"command" : "hexencode"
+	},
+	{
+		"caption" : "MD5",
+		"command" : "hashmd5"
+	},
+	{
+		"caption" : "SHA1",
+		"command" : "hashsha1"
+	}
+	]
+}
+]
