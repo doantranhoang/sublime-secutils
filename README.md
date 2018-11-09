@@ -23,6 +23,8 @@ Put the source-code into Packages Folder
 $ git clone https://github.com/doantranhoang/sublime-secutils.git
 ```
 
+Enjoy!
+
 ## Debug / Development
 
 The `View --> Show Console` menu is your friend.
