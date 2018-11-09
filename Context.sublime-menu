@@ -21,6 +21,14 @@
 		"command" : "hexencode"
 	},
 	{
+		"caption" : "URL Encode",
+		"command" : "urlencode"
+	},
+	{
+		"caption" : "URL Decode",
+		"command" : "urldecode"
+	},
+	{
 		"caption" : "MD5",
 		"command" : "hashmd5"
 	},

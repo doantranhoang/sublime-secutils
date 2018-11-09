@@ -3,6 +3,7 @@ import sublime_plugin
 import base64
 import hashlib
 import binascii
+import urllib
 
 class Base64decodeCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
@@ -24,6 +25,27 @@ class Base64encodeCommand(sublime_plugin.TextCommand):
 			selected = v.substr(v.sel()[i])
 			b64_str = base64.b64encode(selected.encode('utf-8')).decode("utf-8")
 			v.replace(edit, v.sel()[i], b64_str)
+
+class UrlencodeCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		v = self.view
+		sels = len(list(v.sel()))
+		for i in range(0, sels):
+			selected = v.substr(v.sel()[i])
+			url_str = urllib.parse.quote(selected.encode('utf-8'))
+			v.replace(edit, v.sel()[i], url_str)
+
+class UrldecodeCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		v = self.view
+		try:
+			sels = len(list(v.sel()))
+			for i in range(0, sels):
+				selected = v.substr(v.sel()[i])
+				url_str = urllib.parse.unquote(selected)
+				v.replace(edit, v.sel()[i], url_str)
+		except Exception as err:
+			sublime.error_message(str(err))
 
 class HexdecodeCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
