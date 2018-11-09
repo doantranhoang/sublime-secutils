@@ -1,6 +1,10 @@
 ## At First Glance
 
-Simplify my daily tasks with this Menu
+Simplify my daily tasks with this Context-Menu
+- Base64 Encode/Decode
+- ASCII to Hex Encode/Decode
+- URL Encode/Decode
+- MD5/SHA1 hash
 
 ![sublime-secutils](https://raw.githubusercontent.com/doantranhoang/sublime-secutils/master/images/at_first_glance.png)
 
