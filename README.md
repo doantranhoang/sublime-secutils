@@ -17,6 +17,8 @@ Find your `Packages Folder` with SublimeText's Menu
 
 - Windows: `Preferences -> Browse Packages`. Default path `C:\Users\~\AppData\Roaming\Sublime Text 3\Packages\`
 
+- Ubuntu Linux: `Preferences -> Browse Packages`. Default path `~/.config/sublime-text-3/Packages/`
+
 Put the source-code into Packages Folder
 
 ```
