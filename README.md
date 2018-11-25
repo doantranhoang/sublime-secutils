@@ -19,7 +19,7 @@ Find your `Packages Folder` with SublimeText's Menu
 
 - Ubuntu Linux: `Preferences -> Browse Packages`. Default path `~/.config/sublime-text-3/Packages/`
 
-Put the source-code into Packages Folder
+Putting the source-code into Packages Folder
 
 ```
 $ git clone https://github.com/doantranhoang/sublime-secutils.git
